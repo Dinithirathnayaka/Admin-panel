@@ -1,0 +1,11 @@
+body {
+  background-image: url(../assets/images/loginbackground.jpg);
+  background-size: cover;
+  background-color: black;
+}
+
+.box {
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  z-index: 10;
+}
