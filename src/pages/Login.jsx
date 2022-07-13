@@ -8,7 +8,10 @@ function Login() {
   return (
     <div className="loginmain">
       <div className="p-4 box">
-        <h2 className="mb-3 text-center"> Login</h2>
+        <h2 className="mb-3 text-center" style={{ color: "#fff" }}>
+          {" "}
+          Login
+        </h2>
 
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -34,9 +37,11 @@ function Login() {
           <GoogleButton className="g-btn" type="dark" />
         </div>
 
-        <div className="text-center mt-3">Forgot Password</div>
+        <div className="text-center mt-3" style={{ color: "#fff" }}>
+          Forgot Password
+        </div>
 
-        <div className="p-4  mt-3 text-center">
+        <div className="p-4  mt-3 text-center" style={{ color: "#fff" }}>
           Don't have an account? Sign Up
         </div>
       </div>
