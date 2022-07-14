@@ -7,16 +7,20 @@ import Dashboard from "./pages/Dashboard";
 import Product from "./pages/Product";
 import Catogories from "./pages/Catogories";
 import Order from "./pages/Order";
+import AddNewMenu from "./pages/AddNewMenu";
+import MenuList from "./pages/MenuList";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Dashboard />} />
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
         <Route path="/product" element={<Product />} />
         <Route path="/order" element={<Order />} />
         <Route path="/catogories" element={<Catogories />} />
+        <Route path="/addnewmenu" element={<AddNewMenu />} />
+        <Route path="/menulist" element={<MenuList />} />
         <Route path="*" element={<> not found</>} />
         {/* <Route path="/editproduct" element={<Editproduct />} /> */}
       </Routes>

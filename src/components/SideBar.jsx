@@ -23,6 +23,23 @@ const routes = [
     path: "/product",
     name: "Product",
     icon: <MdMessage />,
+    subRoutes: [
+      {
+        path: "/addnewmenu",
+        name: "Add New Menu ",
+        icon: <FaUser />,
+      },
+      {
+        path: "/menulist",
+        name: "Menu List",
+        icon: <FaLock />,
+      },
+      // {
+      //   path: "/product/billing",
+      //   name: "Billing",
+      //   icon: <FaMoneyBill />,
+      // },
+    ],
   },
   {
     path: "/catogories",
@@ -148,7 +165,7 @@ const SideBar = ({ children }) => {
                   exit="hidden"
                   className="logo"
                 >
-                  DoSomeCoding
+                  Logo
                 </motion.h1>
               )}
             </AnimatePresence>
@@ -157,7 +174,7 @@ const SideBar = ({ children }) => {
               <FaBars onClick={toggle} />
             </div>
           </div>
-          <div className="search">
+          {/* <div className="search">
             <div className="search_icon">
               <BiSearch />
             </div>
@@ -173,7 +190,7 @@ const SideBar = ({ children }) => {
                 />
               )}
             </AnimatePresence>
-          </div>
+          </div> */}
           <section className="routes">
             {routes.map((route, index) => {
               if (route.subRoutes) {

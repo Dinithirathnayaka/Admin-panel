@@ -6,6 +6,8 @@
 
 .main-container {
   display: flex;
+  background-color: #353538;
+  color: #fff;
 }
 main {
   padding: 10px;
@@ -19,7 +21,7 @@ main {
 
 /* Sidebar */
 .sidebar {
-  background: rgb(0, 7, 61);
+  background: #1e1e26;
   color: white;
   height: 100vh;
   overflow-y: auto;
@@ -74,12 +76,12 @@ main {
 }
 .link:hover {
   border-right: 4px solid white;
-  background: rgb(45, 51, 89);
+  background: #1e1e26;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .active {
   border-right: 4px solid white;
-  background: rgb(45, 51, 89);
+  background: #1e1e26;
 }
 .link_text {
   white-space: nowrap;
@@ -106,4 +108,13 @@ main {
 .menu_container .link {
   padding-left: 20px;
   border-bottom: #fff 0.5px solid;
+}
+
+/* Add New Menu */
+
+.menutop {
+  width: 70vw;
+  height: auto;
+  background-color: #1e1e26;
+  padding: 5%;
 }
