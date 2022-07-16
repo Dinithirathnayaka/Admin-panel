@@ -6,7 +6,7 @@
 
 .main-container {
   display: flex;
-  background-color: #353538;
+  background-color: #264348;
   color: #fff;
 }
 main {
@@ -21,7 +21,7 @@ main {
 
 /* Sidebar */
 .sidebar {
-  background: #1e1e26;
+  background: #044f67;
   color: white;
   height: 100vh;
   overflow-y: auto;
@@ -76,12 +76,12 @@ main {
 }
 .link:hover {
   border-right: 4px solid white;
-  background: #1e1e26;
+  background: #044f67;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .active {
   border-right: 4px solid white;
-  background: #1e1e26;
+  background: #044f67;
 }
 .link_text {
   white-space: nowrap;
@@ -112,9 +112,63 @@ main {
 
 /* Add New Menu */
 
+.search {
+  padding: 5px;
+  width: 200px;
+}
+
 .menutop {
   width: 70vw;
-  height: auto;
-  background-color: #1e1e26;
+  height: 80vh;
+  background-color: #044f67;
   padding: 5%;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.menutop::-webkit-scrollbar {
+  display: none;
+}
+
+.imgu {
+  background-color: deepskyblue;
+  padding: 5px;
+  width: 30vw;
+  border-radius: 5px;
+}
+
+button {
+  width: 100px;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.btnc {
+  background-color: red;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+}
+
+.btnd {
+  background-color: red;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+}
+
+.btne {
+  background-color: limegreen;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+}
+
+.btns {
+  background-color: rgb(0, 60, 255);
+  border-radius: 5px;
+  color: #fff;
+  border: none;
 }

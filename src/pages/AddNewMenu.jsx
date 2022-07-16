@@ -15,7 +15,7 @@ function AddNewMenu() {
               <div className="search_icon">
                 <BiSearch />
               </div>
-              <AnimatePresence>
+              <AnimatePresence className="search">
                 <motion.input
                   initial="hidden"
                   animate="show"
@@ -28,6 +28,8 @@ function AddNewMenu() {
           </div>
         </div>
         Add/Edit Menu
+        <br />
+        <br />
         <div className="menutop">
           <div className="form">
             <form className="addmenu">
@@ -42,6 +44,7 @@ function AddNewMenu() {
                   placeholder="Product Name"
                 />
               </div>
+              <br />
 
               <div className="form-group">
                 <label for="cars">Category:</label>
@@ -53,30 +56,34 @@ function AddNewMenu() {
                   <option value="Category 4">Category 4</option>
                 </select>
               </div>
+              <br />
 
-              <div className="form-group">
-                <label for="price">Price</label>
-                <br />
-                <input
-                  id="price"
-                  type="text"
-                  name="price"
-                  className="form-control"
-                  placeholder="Price"
-                />
-              </div>
+              <div className="row">
+                <div className="col-6 form-group ">
+                  <label for="price">Price</label>
+                  <br />
+                  <input
+                    id="price"
+                    type="text"
+                    name="price"
+                    className="form-control"
+                    placeholder="Price"
+                  />
+                </div>
 
-              <div className="form-group">
-                <label for="discount">Discount</label>
-                <br />
-                <input
-                  id="discount"
-                  type="text"
-                  name="discount"
-                  className="form-control"
-                  placeholder="Discount"
-                />
+                <div className="col-6 form-group">
+                  <label for="discount">Discount</label>
+                  <br />
+                  <input
+                    id="discount"
+                    type="text"
+                    name="discount"
+                    className="form-control"
+                    placeholder="Discount"
+                  />
+                </div>
               </div>
+              <br />
 
               <div className="form-group">
                 <label for="description">Description</label>
@@ -88,13 +95,15 @@ function AddNewMenu() {
                   placeholder="Description..."
                 />
               </div>
+              <br />
               <label for="description">Uploaded image</label>
               <br />
               <br />
               <label for="anotheriamge">Upload another image</label>
               <br />
-              <input type="file" accept="image/*" />
+              <input type="file" className="imgu" accept="image/*" />
               <br />
+
               <button type="delete" className="btnd ">
                 Delete
               </button>
@@ -106,7 +115,7 @@ function AddNewMenu() {
               <button type="Button" className="btnc ">
                 Cancel
               </button>
-              <button type="submit" className="btne ">
+              <button type="submit" className="btns ">
                 Save/Add
               </button>
             </form>
