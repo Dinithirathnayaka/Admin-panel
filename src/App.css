@@ -247,3 +247,31 @@ button {
   font-size: 15px;
   background-color: darkgray;
 }
+
+/* Order List*/
+
+.orderlist {
+  width: 90vw;
+  height: 80vh;
+  padding-left: 5%;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-top: 100px;
+}
+
+.orderlist::-webkit-scrollbar {
+  display: none;
+}
+
+.detail {
+  width: 80vw;
+  height: auto;
+  background-color: #044f67;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.ido {
+  display: flex;
+}
