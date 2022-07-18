@@ -8,6 +8,8 @@
   display: flex;
   background-color: #264348;
   color: #fff;
+  height: 100vh;
+  position: fixed;
 }
 main {
   padding: 10px;
@@ -223,18 +225,25 @@ button {
 
 .mdel {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   color: red;
   text-align: center;
   border: none;
+  font-size: 15px;
+  background-color: darkgray;
+  margin-right: 30px;
+  margin-left: 100px;
+  margin-top: 30px;
 }
 
 .medit {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   color: darkblue;
   text-align: center;
   border: none;
+  font-size: 15px;
+  background-color: darkgray;
 }
