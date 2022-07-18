@@ -142,7 +142,7 @@ const SideBar = ({ children }) => {
 
   return (
     <>
-      <div className="main-container">
+      <div className="container-fluid">
         <motion.div
           animate={{
             width: isOpen ? "200px" : "45px",
